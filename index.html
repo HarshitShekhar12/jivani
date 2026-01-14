@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jivani Herbs | Botanical Infusions & Wellness</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        jivani: {
+          bg: '#FFF1E6',
+          green: '#2F5D50',
+          olive: '#7A9B76',
+          brown: '#6B4F3F',
+          text: '#2B2B2B',
+          light: '#FDFBF7'
+        }
+      },
+      fontFamily: {
+        serif: ['Cormorant Garamond', 'serif'],
+        sans: ['Inter', 'sans-serif']
+      }
+    }
+  }
+}
+</script>
+
+<style>
+[x-cloak] { display: none !important; }
+html { scroll-behavior: smooth; }
+body { background:#FFF1E6; color:#2B2B2B; }
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+</style>
+</head>
+
+<body class="font-sans antialiased">
+
+<header class="fixed top-0 w-full bg-[#FFF1E6]/95 backdrop-blur border-b border-[#6B4F3F]/10 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="font-serif text-2xl font-bold text-[#2F5D50]">Jivani Herbs</h1>
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="pt-32 pb-24">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="font-serif text-5xl text-[#2F5D50] mb-6">
+        Pure Herbs.<br><span class="italic text-[#7A9B76]">Real Healing.</span>
+      </h2>
+      <p class="text-lg opacity-80 mb-8">
+        Premium botanical infusions and herbal rituals backed by tradition and modern science.
+      </p>
+      <a href="#products" class="inline-block px-8 py-4 bg-[#2F5D50] text-white rounded-full">Explore Products</a>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?q=80&w=988&auto=format&fit=crop"
+           class="rounded-2xl shadow-lg" alt="Herbal Tea">
+    </div>
+  </div>
+</section>
+
+<section id="products" class="py-24 bg-white/40">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="font-serif text-4xl text-[#2F5D50] mb-12">Featured Products</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow-sm">
+        <h4 class="font-serif text-xl mb-2">Serenity Blue Lotus</h4>
+        <p class="text-sm opacity-70 line-clamp-2">Ancient flower infusion for calm evenings.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-sm">
+        <h4 class="font-serif text-xl mb-2">Golden Moon Milk</h4>
+        <p class="text-sm opacity-70 line-clamp-2">Turmeric and saffron wellness blend.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-sm">
+        <h4 class="font-serif text-xl mb-2">Vitality Root</h4>
+        <p class="text-sm opacity-70 line-clamp-2">Pure Ashwagandha tablets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-[#6B4F3F] text-[#FFF1E6] py-12 text-center">
+  <p>© 2024 Jivani Herbs. All rights reserved.</p>
+</footer>
+
+<script>
+lucide.createIcons();
+</script>
+
+</body>
+</html>
